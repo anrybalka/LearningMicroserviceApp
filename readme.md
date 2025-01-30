@@ -155,10 +155,3 @@ Invoke-RestMethod -Uri "http://localhost:5432/check-token" -Method Get -Headers 
 ```powershell
 Invoke-RestMethod -Uri "http://localhost:5434/log" -Method Post -Body (@{message = "This is a log message from PowerShell"} | ConvertTo-Json) -ContentType "application/json"
 ```
-
----
-
-## Заключение
-
-Этот проект демонстрирует базовые принципы работы микросервисной архитектуры с использованием Docker. Каждый сервис выполняет свою задачу и взаимодействует с другими через API. Для дальнейшего развития проекта рекомендуется добавить обработку ошибок, улучшить безопасность и настроить мониторинг.
-```
