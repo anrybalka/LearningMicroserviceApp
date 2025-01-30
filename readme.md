@@ -29,9 +29,9 @@
 
 2. Соберите Docker-образы для каждого сервиса:
    ```bash
+   docker build -t nginx .
    docker build -t 000-user-service .
    docker build -t 001-log-service .
-   docker build -t nginx .
    docker build -t 002-robot-tester .
    ```
 
