@@ -37,9 +37,9 @@
 
 3. Запустите контейнеры:
    ```bash
+   docker run -d --name nginx --network my-network -p 80:80 nginx
    docker run -d --name 000-user-service --network my-network -p 5432:5432 000-user-service
    docker run -d --name 001-log-service --network my-network -p 5434:5434 001-log-service
-   docker run -d --name nginx --network my-network -p 80:80 nginx
    docker run -d --name 002-robot-tester --network my-network -p 5435:5435 002-robot-tester
    ```
 
